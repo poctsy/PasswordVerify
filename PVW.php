@@ -60,8 +60,10 @@ class PVW extends CWidget
 
         $cs = Yii::app()->getClientScript();
         $cs->registerCoreScript("jquery");
-        $cs->registerScript("protect", "
-        $('#$protect->passwordId').attr('value','')
+
+
+       $js=<<<EOF
+      $('#$protect->passwordId').attr('value','')
         $(':submit').click(function(){
          var password=$('#$protect->passwordId').attr('value');
          if(password =='')return;
@@ -106,9 +108,9 @@ class PVW extends CWidget
         $('#$protect->passwordId').attr('value',newPassword)
         $('#$protect->passwordId').addClass('hasVerify')
         });
-     ");
+EOF;
 
-
+        $cs->registerScript("protect", $js);
     }
 
 }
