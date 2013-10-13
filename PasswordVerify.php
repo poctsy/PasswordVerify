@@ -213,11 +213,11 @@ class PasswordVerify extends CComponent
     {
         $this->passwordId=$this->formId.'_'.$this->passwordName;
         $this->verifyDirectoryPath=Yii::app()->runtimePath.DIRECTORY_SEPARATOR.$this->verifyDirectoryName;
-        $this->temb1_direction=$this->left_direction;
-        $this->temb2_direction=$this->left_direction;
-        $this->temb3_direction=$this->right_direction;
-        $this->temb4_direction=$this->left_direction;
-        $this->temb5_direction=$this->right_direction;
+        // $this->temb1_direction=$this->left_direction;
+        // $this->temb2_direction=$this->left_direction;
+        //$this->temb3_direction=$this->right_direction;
+        //$this->temb4_direction=$this->left_direction;
+        //$this->temb5_direction=$this->right_direction;
 
     }
 
