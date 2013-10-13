@@ -448,7 +448,7 @@ class PasswordVerify extends CComponent
         $this->passwordValue=$this->post[$this->passwordName];
         $this->deAlgorithm();
         $this->post[$this->passwordName]=$this->passwordValue;
-        //$this->delectVerify();
+        $this->delectVerify();
     }
 
     /**
